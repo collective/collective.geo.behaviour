@@ -4,6 +4,7 @@ from shapely.geometry.geo import asShape
 from rwproperty import getproperty, setproperty
 
 from zope.interface import implements
+from zope.component import queryAdapter
 
 from collective.geo.geographer.interfaces import IGeoreferenced
 from collective.geo.geographer.interfaces import IWriteGeoreferenced
@@ -21,12 +22,14 @@ class Coordinates(object):
 
     @getproperty
     def coordinates(self):
-        try:
-            return asShape(IGeoreferenced(self.context).geo).wkt
-        except ValueError:
-            # context is not a valid shape.
-            # create a validator?
-            pass
+        geo_adapter = queryAdapter(self.context, IGeoreferenced)
+        if geo_adapter:
+            try:
+                return asShape(IGeoreferenced(self.context).geo).wkt
+            except ValueError:
+                # context is not a valid shape.
+                # create a validator?
+                pass
         return u''
 
     @setproperty
