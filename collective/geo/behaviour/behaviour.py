@@ -34,6 +34,8 @@ class Coordinates(object):
 
     @setproperty
     def coordinates(self, value):
+        if not value:
+            return
         coords = wkt.loads(value).__geo_interface__
         geo = IWriteGeoreferenced(self.context)
         geo.setGeoInterface(coords['type'], coords['coordinates'])
@@ -42,10 +44,10 @@ class Coordinates(object):
 
 # class GeoCustomFeatureStyle(object):
 #     implements(IGeoCustomFeatureStyle)
-# 
+#
 #     def __init__(self, context):
 #         self.context = context
-# 
+#
 #     use_custom_styles = True
 #     linecolor = u'ff00003c'
 #     linewidth = 2.0
