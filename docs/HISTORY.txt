@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.1dev (unreleased)
--------------------
+0.1 (unreleased)
+----------------
 
 - Added support for Spanish localization [macagua]
 - Added improvements about the Internationalization [macagua]
