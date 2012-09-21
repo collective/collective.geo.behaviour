@@ -33,7 +33,7 @@ About the behaviour
 -------------------
 
 The behaviour adds a ``coordinates`` field to the content type and uses a
-``collective.z3cform.mapwdiget`` widget in order to allow the user to
+``collective.z3cform.mapwidget`` widget in order to allow the user to
 manipulate the geographic information.  
 
 The behaviour effectively acts as a proxy to load and save the data into the
