@@ -1,6 +1,3 @@
-from shapely import wkt
-from shapely.geometry.geo import asShape
-
 from rwproperty import getproperty, setproperty
 
 from zope.interface import implements
@@ -25,8 +22,12 @@ class Coordinates(object):
         geo_adapter = queryAdapter(self.context, IGeoreferenced)
         if geo_adapter:
             try:
+                from shapely.geometry.geo import asShape
+            except ImportError:
+                from pygeoif.geometry import as_shape as asShape
+            try:
                 return asShape(IGeoreferenced(self.context).geo).wkt
-            except ValueError:
+            except (ValueError, TypeError, NotImplementedError):
                 # context is not a valid shape.
                 # create a validator?
                 pass
@@ -36,7 +37,13 @@ class Coordinates(object):
     def coordinates(self, value):
         if not value:
             return
-        coords = wkt.loads(value).__geo_interface__
+        try:
+            from shapely import wkt
+            geom = wkt.loads(value)
+        except ImportError:
+            from pygeoif.geometry import from_wkt
+            geom = from_wkt(value)
+        coords = geom.__geo_interface__
         geo = IWriteGeoreferenced(self.context)
         geo.setGeoInterface(coords['type'], coords['coordinates'])
 

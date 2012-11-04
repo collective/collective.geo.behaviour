@@ -31,7 +31,7 @@ setup(name='collective.geo.behaviour',
           'zope.interface',
           'zope.component',
           'rwproperty',
-          'shapely',
+          'pygeoif > 0.2',
           'collective.geo.geographer',
           'collective.z3cform.mapwidget',
           # -*- Extra requirements: -*-

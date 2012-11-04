@@ -4,6 +4,7 @@ Changelog
 0.1 (unreleased)
 ----------------
 
+- Removed Shapely dependency, added pygeoif [gborelli]
 - Added support for Spanish localization [macagua]
 - Added improvements about the Internationalization [macagua]
 
