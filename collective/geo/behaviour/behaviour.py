@@ -36,16 +36,18 @@ class Coordinates(object):
     @setproperty
     def coordinates(self, value):
         if not value:
-            return
-        try:
-            from shapely import wkt
-            geom = wkt.loads(value)
-        except ImportError:
-            from pygeoif.geometry import from_wkt
-            geom = from_wkt(value)
-        coords = geom.__geo_interface__
-        geo = IWriteGeoreferenced(self.context)
-        geo.setGeoInterface(coords['type'], coords['coordinates'])
+            geo = IWriteGeoreferenced(self.context)
+            geo.removeGeoInterface()
+        else:
+            try:
+                from shapely import wkt
+                geom = wkt.loads(value)
+            except ImportError:
+                from pygeoif.geometry import from_wkt
+                geom = from_wkt(value)
+            coords = geom.__geo_interface__
+            geo = IWriteGeoreferenced(self.context)
+            geo.setGeoInterface(coords['type'], coords['coordinates'])
 
 
 
