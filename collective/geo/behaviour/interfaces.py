@@ -21,10 +21,10 @@ class ICoordinates(form.Schema):
     form.widget(
         coordinates='collective.z3cform.mapwidget.widget.MapFieldWidget')
     coordinates = schema.Text(
-            title=_(u"Coordinates"),
-            description=_(u"Modify geographical data for this content"),
-            required=False,
-        )
+        title=_(u"Coordinates"),
+        description=_(u"Modify geographical data for this content"),
+        required=False,
+    )
 
 alsoProvides(ICoordinates, form.IFormFieldProvider)
 
@@ -41,10 +41,9 @@ alsoProvides(ICoordinates, form.IFormFieldProvider)
 #                     'marker_image_size',
 #                     'display_properties'),
 #         )
-# 
+#
 #     form.widget(
-#             linecolor='collective.z3cform.colorpicker.colorpickeralpha.ColorpickerAlphaFieldWidget',
-#             polygoncolor='collective.z3cform.colorpicker.colorpickeralpha.ColorpickerAlphaFieldWidget')
-# 
+#          linecolor='collective.z3cform.colorpicker.colorpickeralpha.ColorpickerAlphaFieldWidget',
+#          polygoncolor='collective.z3cform.colorpicker.colorpickeralpha.ColorpickerAlphaFieldWidget')
+#
 # alsoProvides(IGeoCustomFeatureStyle, form.IFormFieldProvider)
-

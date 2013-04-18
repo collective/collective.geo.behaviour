@@ -12,6 +12,7 @@ ptc.setupPloneSite()
 
 import collective.geo.behaviour
 
+
 class TestCase(ptc.PloneTestCase):
     class layer(PloneSite):
         @classmethod
