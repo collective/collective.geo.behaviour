@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.geo.behaviour\n"
-"POT-Creation-Date: 2012-07-03 10:15+0000\n"
+"POT-Creation-Date: 2013-04-25 21:42+0000\n"
 "PO-Revision-Date: 2012-07-03 10:15+0000\n"
 "Last-Translator: Maarten Kling <maarten@fourdigits.nl>\n"
 "Language-Team: \n"
@@ -22,3 +22,4 @@ msgstr "Coördinaten"
 #: ../interfaces.py:25
 msgid "Modify geographical data for this content"
 msgstr "Wijzig geografische gegevens voor deze inhoud"
+

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.geo.behaviour\n"
-"POT-Creation-Date: 2011-06-23 15:21+0000\n"
+"POT-Creation-Date: 2013-04-25 21:42+0000\n"
 "PO-Revision-Date: 2013-01-27 18:30+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Domain: collective.geo.behaviour\n"
 "X-is-fallback-for: zh\n"
 
-#: ./interfaces.py:24
+#: ../interfaces.py:24
 msgid "Coordinates"
 msgstr "座標"
 
-#: ./interfaces.py:25
+#: ../interfaces.py:25
 msgid "Modify geographical data for this content"
 msgstr "編輯地理資訊"
 
