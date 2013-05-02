@@ -20,6 +20,7 @@ var
 *.pyc
 *.pyo
 *.tmp*
+*.mo
 src
 .project
 .pydevproject
