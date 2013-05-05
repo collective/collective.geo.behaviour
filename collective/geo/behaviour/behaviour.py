@@ -1,3 +1,5 @@
+from Acquisition import ImplicitAcquisitionWrapper
+from Acquisition import aq_self
 from rwproperty import getproperty, setproperty
 
 from zope.interface import implements
@@ -15,6 +17,9 @@ class Coordinates(object):
     implements(ICoordinates)
 
     def __init__(self, context):
+        # dewrap context when a Dexterity object is added
+        if isinstance(context, ImplicitAcquisitionWrapper):
+            context = aq_self(context)
         self.context = context
 
     @getproperty
