@@ -35,8 +35,8 @@ setup(
         'zope.component',
         'rwproperty',
         'pygeoif > 0.2',
-        'collective.geo.geographer',
-        'collective.z3cform.mapwidget',
+        'collective.geo.geographer  > 1.7',
+        'collective.z3cform.mapwidget > 0.1',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
