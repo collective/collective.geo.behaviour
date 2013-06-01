@@ -33,12 +33,15 @@ setup(
         'zope.schema',
         'zope.interface',
         'zope.component',
-        'rwproperty',
         'pygeoif > 0.2',
         'collective.geo.geographer  > 1.7',
-        'collective.z3cform.mapwidget > 0.1',
-        # -*- Extra requirements: -*-
+        'collective.z3cform.mapwidget > 0.1'
     ],
+    extras_require={
+        'test': [
+            'plone.app.testing',
+        ]
+    },
     entry_points="""
     # -*- Entry points: -*-
 

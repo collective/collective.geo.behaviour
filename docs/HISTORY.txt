@@ -4,6 +4,9 @@ Changelog
 0.1 (unreleased)
 ----------------
 
+- removed dependency from rwproperty
+  [gborelli]
+
 - Unwrap behaviour context, it raises an error when Dexterity object
   is georeferenced
   [gborelli]
