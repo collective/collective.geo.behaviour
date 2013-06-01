@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>1</version>
+  <dependencies>
+    <dependency>profile-collective.geo.geographer:default</dependency>
+    <dependency>profile-collective.z3cform.mapwidget:default</dependency>
+  </dependencies>
+</metadata>
+
