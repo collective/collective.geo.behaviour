@@ -3,38 +3,36 @@ Introduction
 
 This package provides the ability to assign geographical information to
 Dexterity-based (``plone.app.dexterity``) content types within Plone and does
-so using ``collective.geo.geographer`` and ``collective.z3cform.mapwidget``.  
+so using `collective.geo.geographer`_ and `collective.geo.mapwidget`_.
 
 By applying the behaviour from this package to a Dexterity content type, a
 `Coordinates` field becomes available when creating or editing said content.
 This allows a user to either look-up coordinates for a place or feature via
 geo-coding, draw a geographical feature (such as a point, line or polygon) on a
-map, or enter details manually in Well-Known Text (WKT) format.
+map, or enter details manually in Well-Known Text (`WKT`_) format.
 
-When stored, this geographical information can be used by the rest of the 
+When stored, this geographical information can be used by the rest of the
 ``collective.geo`` set of packages.  For instance, the coordinates can be
-displayed on maps against Collections or Folders using ``collective.geo.kml``.
+displayed on maps against Collections or Folders using `collective.geo.kml`_.
+
+Found a bug? Please, use the `issue tracker`_.
+
+.. contents:: Table of contents
+
 
 Installation
-------------
+============
 
-Add this package into your Plone buildout like so::
-    
-    [instance]
-    recipe = plone.recipe.zope2instance
-    ...
-    eggs +=
-        collective.geo.behaviour
+This addon can be installed has any other addons, please follow official
+documentation_.
 
-The package provides an auto-entry point so specifying its name under
-``zcml`` isn't necessary.
 
 About the behaviour
 -------------------
 
 The behaviour adds a ``coordinates`` field to the content type and uses a
 ``collective.z3cform.mapwidget`` widget in order to allow the user to
-manipulate the geographic information.  
+manipulate the geographic information.
 
 The behaviour effectively acts as a proxy to load and save the data into the
 relevant location by querying for an
@@ -69,13 +67,13 @@ Generic Setup (file system)
 
 If you've created a file-system Dexterity type configuration, you need to
 specify the relevant interface as a behaviour::
-    
+
     collective.geo.behaviour.interfaces.ICoordinates
 
 and import or re-import your type configuration.  As an example, a type
 configuration at ``${product_dir}/profiles/default/types/my.datatype.xml``
 would look like this::
-    
+
     <?xml version="1.0"?>
     <object name="my.datatype"
        meta_type="Dexterity FTI"
@@ -86,3 +84,11 @@ would look like this::
         </property>
         ...
     </object>
+
+.. _documentation: http://plone.org/documentation/kb/installing-add-ons-quick-how-to
+.. _issue tracker: https://github.com/collective/collective.geo.bundle/issues
+.. _Plone: http://plone.org
+.. _collective.geo.mapwidget: http://pypi.python.org/pypi/collective.geo.mapwidget
+.. _collective.geo.geographer: http://pypi.python.org/pypi/collective.geo.geographer
+.. _collective.geo.kml: http://pypi.python.org/pypi/collective.geo.kml
+.. _WKT: http://en.wikipedia.org/wiki/Well-known_text

@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.0 (unreleased)
-----------------
+1.0b1 (2013-06-02)
+------------------
 
 - Add install profile
-  [giorgio]
+  [gborelli]
 
 - Removed dependency from rwproperty
   [gborelli]
@@ -22,4 +22,3 @@ Changelog
 
 - Added improvements about the Internationalization
   [macagua]
-
