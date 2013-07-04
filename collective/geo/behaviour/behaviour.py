@@ -40,10 +40,7 @@ class Coordinates(object):
 
     @coordinates.setter
     def coordinates(self, value):
-        if not value:
-            geo = IWriteGeoreferenced(self.context)
-            geo.removeGeoInterface()
-        else:
+        if value:
             try:
                 from shapely import wkt
                 geom = wkt.loads(value)

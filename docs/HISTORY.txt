@@ -4,7 +4,8 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix for issue https://github.com/collective/collective.geo.geographer/issues/5
+  [bogdangi]
 
 
 1.0b2 (2013-06-02)
