@@ -29,7 +29,8 @@ setup(
     install_requires=[
         'setuptools',
         'plone.behavior',
-        'plone.directives.form',
+        'plone.autoform',
+        'plone.supermodel',
         'zope.schema',
         'zope.interface',
         'zope.component',
