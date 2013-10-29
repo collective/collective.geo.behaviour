@@ -1,8 +1,11 @@
 Changelog
 =========
 
-1.0b3 (unreleased)
-------------------
+1.0 (unreleased)
+----------------
+
+- Change package layout
+  [gborelli]
 
 - Remove dependency on Grok
   [jianaijun]
