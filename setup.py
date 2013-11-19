@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0b3.dev0'
+version = '1.1.dev0'
 
 setup(
     name='collective.geo.behaviour',
@@ -22,14 +22,16 @@ setup(
     author_email='',
     url='https://github.com/collective/collective.geo.behaviour',
     license='GPL',
-    packages=find_packages(exclude=['ez_setup']),
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     namespace_packages=['collective', 'collective.geo'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
         'setuptools',
         'plone.behavior',
-        'plone.directives.form',
+        'plone.autoform',
+        'plone.supermodel',
         'zope.schema',
         'zope.interface',
         'zope.component',

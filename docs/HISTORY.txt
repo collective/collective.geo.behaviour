@@ -1,11 +1,21 @@
 Changelog
 =========
 
-1.0b3 (unreleased)
-------------------
+1.1 (unreleased)
+----------------
 
 - Fix for issue https://github.com/collective/collective.geo.geographer/issues/5
   [bogdangi]
+
+
+1.0 (2013-10-29)
+----------------
+
+- Change package layout
+  [gborelli]
+
+- Remove dependency on Grok
+  [jianaijun]
 
 
 1.0b2 (2013-06-02)
