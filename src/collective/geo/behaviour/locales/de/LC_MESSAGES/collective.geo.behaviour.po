@@ -1,0 +1,31 @@
+# collective.geo.behaviour
+# Giorgio Borelli <giorgio@giorgioborelli.it>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"POT-Creation-Date: 2013-11-21 14:19+0000\n"
+"PO-Revision-Date: 2013-04-25  21:42+0000\n"
+"Last-Translator: Denis Krienbühl <denis@href.ch>\n"
+"Language-Team: Giorgio Borelli <giorgio@giorgioborelli.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.geo.behaviour\n"
+"X-Is-Fallback-For: de-ch\n"
+
+#: ../interfaces.py:19
+msgid "Coordinates"
+msgstr "Koordinaten"
+
+#: ../interfaces.py:38
+msgid "Custom map styles"
+msgstr "Individueller Style"
+
+#: ../interfaces.py:20
+msgid "Modify geographical data for this content"
+msgstr "Geografische Daten für diesen Inhalt anpassen"
+

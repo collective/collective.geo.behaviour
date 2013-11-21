@@ -7,6 +7,9 @@ Changelog
 - Fix for issue https://github.com/collective/collective.geo.geographer/issues/5
   [bogdangi]
 
+- Added German translation
+  [href]
+
 
 1.0 (2013-10-29)
 ----------------
