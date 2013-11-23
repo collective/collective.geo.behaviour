@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.geo.behaviour">
+
+  <include file="configure.zcml" />
+
+  <genericsetup:registerProfile
+      name="testing"
+      title="collective.geo.behaviour tests"
+      directory="profiles/testing"
+      description="Steps to ease tests of collective.geo.behaviour"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
