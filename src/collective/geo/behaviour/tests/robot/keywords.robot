@@ -47,3 +47,60 @@ Create dexterity test content with geo behaviour
 Go to Custom map styles tab
     Click Link  link=Edit
     Click Link  link=Custom map styles
+
+Check use custom styles field
+    Go to Custom map styles tab
+    Select Checkbox  id=form-widgets-ICoordinates-use_custom_styles-0
+    Click Button  Save
+    Page Should Contain  Changes saved
+    Go to Custom map styles tab
+    Checkbox Should Be Selected  id=form-widgets-ICoordinates-use_custom_styles-0
+
+Check text field on Custom map styles tab
+    [Arguments]  ${name}  ${value}
+    Go to Custom map styles tab
+    Input text  name=${name}  ${value}
+    Click Button  Save
+    Page Should Contain  Changes saved
+    Go to Custom map styles tab
+    Page Should Contain Textfield  name=${name}  message=${value}
+
+Check marker image field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.marker_image  string:\${portal_url}/img/new_marker.png
+
+Check map position field
+    Go to Custom map styles tab
+    Select From List By Value  name=form.widgets.ICoordinates.map_viewlet_position:list  plone.belowcontentbody
+    Click Button  Save
+    Page Should Contain  Changes saved
+    Go to Custom map styles tab
+    List Selection Should Be  name=form.widgets.ICoordinates.map_viewlet_position:list  plone.belowcontentbody
+
+Check marker image size field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.marker_image_size  0.8
+
+Check map width field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.map_width  450px
+
+Check line color field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.linecolor  ff00aa77
+
+Check map height field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.map_height  450px
+
+Check poligon color field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.polygoncolor  0033aa22
+
+Check ballon details field
+    Go to Custom map styles tab
+    Select From List By Value  name=form.widgets.ICoordinates.display_properties.from  id
+    Click Button  name=from2toButton
+    Click Button  Save
+    Page Should Contain  Changes saved
+    Go to Custom map styles tab
+    Select From List By Value  name=form.widgets.ICoordinates.display_properties.to  id
+    Click Button  name=to2fromButton
+    Click Button  Save
+
+Check line width field
+    Check text field on Custom map styles tab  form.widgets.ICoordinates.linewidth  0.3

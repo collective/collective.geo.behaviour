@@ -27,9 +27,13 @@ Test using custom styles tab
     Log in as site owner
     Go to  ${test-folder}
     Create dexterity test content with geo behaviour  Test-content-with-behaviour
-    Go to Custom map styles tab
-    Select Checkbox  id=form-widgets-ICoordinates-use_custom_styles-0
-    Click Button  Save
-    Page Should Contain  Changes saved
-    Go to Custom map styles tab
-    Checkbox Should Be Selected  id=form-widgets-ICoordinates-use_custom_styles-0
+    Check use custom styles field
+    Check marker image field
+    Check map position field
+    Check marker image size field
+    Check map width field
+    Check line color field
+    Check map height field
+    Check poligon color field
+    Check ballon details field
+    Check line width field
