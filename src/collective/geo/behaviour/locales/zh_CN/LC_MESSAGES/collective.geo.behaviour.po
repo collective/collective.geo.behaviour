@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: collective.geo.behaviour\n"
 "POT-Creation-Date: 2013-12-07 02:52+0000\n"
-"PO-Revision-Date: 2013-09-11 15:30+0800\n"
+"PO-Revision-Date: 2013-12-07 02:53+0800\n"
 "Last-Translator: Jian Aijun <jianaijun@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr "坐标"
 
 #: ../interfaces.py:38
 msgid "Custom map styles"
-msgstr ""
+msgstr "自定义地图样式"
 
 #: ../interfaces.py:20
 msgid "Modify geographical data for this content"
