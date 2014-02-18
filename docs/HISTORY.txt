@@ -4,8 +4,12 @@ Changelog
 1.1 (unreleased)
 ----------------
 
+- Add Collective Geo Styles behavior to manage features' style
+  [gborelli]
+
 - Fix for custom style tab is not working properly
   [bogdangi]
+
 - Fix for issue https://github.com/collective/collective.geo.geographer/issues/5
   [bogdangi]
 

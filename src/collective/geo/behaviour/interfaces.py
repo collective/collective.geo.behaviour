@@ -11,7 +11,7 @@ from collective.geo.settings.config import GEO_STYLE_FIELDS
 from collective.geo.behaviour import MessageFactory as _
 
 
-class ICoordinates(model.Schema, IGeoCustomFeatureStyle):
+class ICoordinates(model.Schema):
     """Add coordinates and map styles to content
     """
 
@@ -22,9 +22,7 @@ class ICoordinates(model.Schema, IGeoCustomFeatureStyle):
     )
 
     form.widget(
-        coordinates=MapFieldWidget,
-        linecolor=colorpickeralpha.ColorpickerAlphaFieldWidget,
-        polygoncolor=colorpickeralpha.ColorpickerAlphaFieldWidget
+        coordinates=MapFieldWidget
     )
 
     model.fieldset(
@@ -33,10 +31,21 @@ class ICoordinates(model.Schema, IGeoCustomFeatureStyle):
         fields=('coordinates', )
     )
 
+
+alsoProvides(ICoordinates, IFormFieldProvider)
+
+
+class IGeoFeatureStyle(model.Schema, IGeoCustomFeatureStyle):
+
+    form.widget(
+        linecolor=colorpickeralpha.ColorpickerAlphaFieldWidget,
+        polygoncolor=colorpickeralpha.ColorpickerAlphaFieldWidget
+    )
+
     model.fieldset(
-        'geo_custom_styles',
-        label=_(u'Custom map styles'),
+        'coordinates',
+        label=_(u'Coordinates'),
         fields=GEO_STYLE_FIELDS
     )
 
-alsoProvides(ICoordinates, IFormFieldProvider)
+alsoProvides(IGeoFeatureStyle, IFormFieldProvider)
