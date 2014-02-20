@@ -16,8 +16,6 @@ class Coordinates(object):
     """
     implements(ICoordinates)
 
-    use_custom_styles = 0
-
     def __init__(self, context):
         # dewrap context when a Dexterity object is added
         if isinstance(context, ImplicitAcquisitionWrapper):

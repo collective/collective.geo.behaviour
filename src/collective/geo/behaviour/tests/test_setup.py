@@ -11,7 +11,6 @@ class TestSetup(unittest.TestCase):
     layer = CGEO_BEHAVIOUR_INTEGRATION
 
     def setUp(self):
-        self.app = self.layer['app']
         self.portal = self.layer['portal']
         self.qi = getToolByName(self.portal, 'portal_quickinstaller')
 

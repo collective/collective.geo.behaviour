@@ -4,6 +4,9 @@ Changelog
 1.1 (unreleased)
 ----------------
 
+- Move robot tests to collective.geo.bundle and add dexterity test
+  [gborelli]
+
 - Add Collective Geo Styles behavior to manage features' style
   [gborelli]
 

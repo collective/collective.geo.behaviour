@@ -36,13 +36,13 @@ setup(
         'zope.interface',
         'zope.component',
         'pygeoif > 0.2',
-        'collective.geo.geographer  > 1.7',
-        'collective.z3cform.mapwidget > 0.1'
+        'collective.geo.geographer >= 2.0',
+        'collective.geo.mapwidget > 2.0',
+        'collective.z3cform.mapwidget >= 2.0'
     ],
     extras_require={
         'test': [
             'plone.app.testing',
-            'plone.app.testing[robot]>=4.2.2',
             'plone.app.dexterity >= 2.0',
         ]
     },
