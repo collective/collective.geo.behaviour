@@ -15,7 +15,7 @@
     <include package="collective.z3cform.mapwidget" />
 
     <plone:behavior
-        title="collective.geo Maps"
+        title="Collective Geo Maps"
         description="This behaviour will make a content geo referenceable"
         provides=".interfaces.ICoordinates"
         marker="collective.geo.geographer.interfaces.IGeoreferenceable"
