@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-04-25 21:42+0000\n"
+"POT-Creation-Date: 2013-12-07 02:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.geo.behaviour\n"
 
-#: ../interfaces.py:24
+#: ../interfaces.py:19
 msgid "Coordinates"
 msgstr ""
 
-#: ../interfaces.py:25
+#: ../interfaces.py:38
+msgid "Custom map styles"
+msgstr ""
+
+#: ../interfaces.py:20
 msgid "Modify geographical data for this content"
 msgstr ""
 
