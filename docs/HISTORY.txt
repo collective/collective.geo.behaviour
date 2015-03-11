@@ -7,6 +7,8 @@ Changelog
 - Update translations
   [gborelli]
 
+- Added french translations
+  [tiazma]
 
 1.1 (2014-02-26)
 ----------------
