@@ -37,8 +37,8 @@ setup(
         'zope.component',
         'pygeoif > 0.2',
         'collective.geo.geographer >= 2.0',
-        'collective.geo.mapwidget >= 2.1.1',
-        'collective.z3cform.mapwidget >= 2.0'
+        'collective.geo.mapwidget >= 2.2',
+        'collective.z3cform.mapwidget >= 2.1'
     ],
     extras_require={
         'test': [
