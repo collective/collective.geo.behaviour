@@ -44,6 +44,7 @@ setup(
         'test': [
             'plone.app.testing',
             'plone.app.dexterity >= 2.0',
+            'plone.app.contenttypes [test]'
         ]
     },
     entry_points="""
