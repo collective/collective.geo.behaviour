@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Using WKT field from c.z3cform.mapwidget > 2.1
+  [giorgio]
+
 - using PLONE_APP_CONTENTTYPES_FIXTURE to make tests plone5 compatible
   [pbauer]
 
