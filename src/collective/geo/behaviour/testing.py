@@ -2,7 +2,8 @@
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import PloneSandboxLayer
-from plone.app.testing import PLONE_FIXTURE
+from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
+# from plone.app.testing import PLONE_FIXTURE
 from zope.configuration import xmlconfig
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import applyProfile
@@ -13,7 +14,7 @@ from plone.testing import z2
 
 class PloneAppCollectiveGeoBehaviour(PloneSandboxLayer):
 
-    defaultBases = (PLONE_FIXTURE,)
+    defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
         import collective.geo.behaviour
@@ -22,8 +23,6 @@ class PloneAppCollectiveGeoBehaviour(PloneSandboxLayer):
             collective.geo.behaviour,
             context=configurationContext
         )
-        import plone.app.dexterity
-        self.loadZCML(package=plone.app.dexterity)
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'collective.geo.behaviour:testing')
