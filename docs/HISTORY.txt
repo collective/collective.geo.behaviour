@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Fix French translation for 'Coordinates' tab
+  [laulaz]
+
 - Using WKT field from c.z3cform.mapwidget > 2.1
   [giorgio]
 

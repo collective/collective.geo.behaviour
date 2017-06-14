@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../interfaces.py:19
 msgid "Coordinates"
-msgstr "Coordonnées"
+msgstr "Géolocalisation"
 
 #: ../interfaces.py:20
 msgid "Modify geographical data for this content"
