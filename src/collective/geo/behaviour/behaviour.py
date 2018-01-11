@@ -50,3 +50,6 @@ class Coordinates(object):
             coords = geom.__geo_interface__
             geo = IWriteGeoreferenced(self.context)
             geo.setGeoInterface(coords['type'], coords['coordinates'])
+        else:
+            geo = IWriteGeoreferenced(self.context)
+            geo.setGeoInterface('', '')
