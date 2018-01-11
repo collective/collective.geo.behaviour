@@ -13,6 +13,13 @@ Changelog
 - using PLONE_APP_CONTENTTYPES_FIXTURE to make tests plone5 compatible
   [pbauer]
 
+- Fix behaviour on save: if you delete the coordinates, they are not removed 
+  'cause the setter in the behavior checks value presence. 
+  We don't need this check. Due to z3cform architecture we enter the
+  setter only when you change the field value; entering the setter
+  with an empty value it's a signal that someone has removed coordinates.
+  [lucabel]
+
 
 1.2 (2015-05-02)
 ----------------
