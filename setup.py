@@ -36,6 +36,7 @@ setup(
         'zope.interface',
         'zope.component',
         'pygeoif > 0.2',
+        'shapely>=2.0.1',
         'collective.geo.geographer >= 2.0',
         'collective.geo.mapwidget >= 2.2',
         'collective.z3cform.mapwidget > 2.1'
